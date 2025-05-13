@@ -1,15 +1,15 @@
-import BarraPrincipal from "../components/navbarCompleta";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "../styles/consumo.css";
+import NavbarCompleta from "../components/NavbarCompleta";
 
-const Consumos = () => {
+export default function Consumos() {
     return (
         <>
-            <BarraPrincipal rota="/" />
+            <NavbarCompleta rota="/" />
             <div>
                 <div id="titulo" className="container-md">
-                    <h3>Registrar Consumo</h3>
+                    <h3>Cadastrar Consumo</h3>
                 </div>
                 <form className="container-lg d-flex flex-column gap-2 my-4">
                     <div className="mb-3">
@@ -107,11 +107,9 @@ const Consumos = () => {
                             </div>
                         </div>
                     </div>
-                    <button type="submit" className="btn mt-5">Registrar</button>
+                    <button type="submit" className="btn mt-5">Cadastrar</button>
                 </form>
             </div>
         </>
     );
 }
-
-export default Consumos;

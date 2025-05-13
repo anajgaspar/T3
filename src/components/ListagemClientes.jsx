@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Botao from "./botao";
+import Botao from "./Botao";
 
-const CardsListagensCliente = ({ nome, cpf, telefone }) => {
+export default function ListagemClientes ({ nome, cpf, telefone }) {
     return (
         <li className="list-group-item d-flex justify-content-between align-items-center gap-4 flex-wrap">
             <div className="d-flex flex-column">
@@ -22,5 +22,3 @@ const CardsListagensCliente = ({ nome, cpf, telefone }) => {
         </li>
     );
 };
-
-export default CardsListagensCliente;

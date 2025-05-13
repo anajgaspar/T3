@@ -1,18 +1,18 @@
-import BarraSecundaria from "../components/navbarLogo";
-import CardsHome from "../components/cardsHome";
+import CardsHome from "../components/CardsHome";
 import "../styles/home.css";
+import NavbarLogo from "../components/NavbarLogo";
 
-const Home = () => {
+export default function Home() {
     return (
         <>
-            <BarraSecundaria />
+            <NavbarLogo />
             <div className="container-fluid">
                 <div id="introducao" className="container-md text-center">
                     <h5>Seja bem-vindo(a) ao melhor sistema de gerenciamento de pet shops e clínicas veterinárias!</h5>
                 </div>
                 <div id="cards" className="container-lg d-flex flex-column align-items-center">
                     <div id="cards-linha-cima" className="row justify-content-center flex-wrap gap-5">
-                        <div id="card" className="col-md-3 rounded shadow-sm">
+                        <div id="card" className="col-md-3 rounded">
                             <CardsHome
                                 icone="https://img.icons8.com/?size=100&id=82751&format=png&color=F39C12"
                                 titulo="Clientes"
@@ -20,7 +20,7 @@ const Home = () => {
                                 rota="/clientes"
                             />
                         </div>
-                        <div id="card" className="col-md-3 rounded shadow-sm">
+                        <div id="card" className="col-md-3 rounded">
                             <CardsHome
                                 icone="https://img.icons8.com/?size=100&id=85073&format=png&color=F39C12"
                                 titulo="Catálogo"
@@ -28,7 +28,7 @@ const Home = () => {
                                 rota="/produtos"
                             />
                         </div>
-                        <div id="card" className="col-md-3 rounded shadow-sm">
+                        <div id="card" className="col-md-3 rounded">
                             <CardsHome
                                 icone="https://img.icons8.com/?size=100&id=86550&format=png&color=F39C12"
                                 titulo="Consumos"
@@ -37,7 +37,7 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                    <div id="card-relatorios" className="align-self-center rounded shadow-sm">
+                    <div id="card-relatorios" className="align-self-center rounded">
                         <CardsHome
                             icone="https://img.icons8.com/?size=100&id=82742&format=png&color=F39C12"
                             titulo="Relatórios"
@@ -50,5 +50,3 @@ const Home = () => {
         </>
     );
 };
-
-export default Home;

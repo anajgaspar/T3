@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-const CardsListagens = ({ nome, valor }) => {
+export default function ListagemProdutosServicos ({ nome, valor }) {
     return (
         <li className="list-group-item d-flex justify-content-between align-items-center gap-4 flex-wrap">
             <div className="d-flex flex-column">
@@ -19,5 +19,3 @@ const CardsListagens = ({ nome, valor }) => {
         </li>
     );
 };
-
-export default CardsListagens;
