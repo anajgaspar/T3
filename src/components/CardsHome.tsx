@@ -2,7 +2,14 @@ import Botao from "./Botao";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-export default function CardsHome({ icone, titulo, descricao, rota }) {
+interface HomeProps {
+    icone: string,
+    titulo: string,
+    descricao: string,
+    rota: string
+}
+
+export default function CardsHome({ icone, titulo, descricao, rota }: HomeProps) {
     return (
         <div className="container-lg d-flex flex-row p-3">
             <div className="d-flex flex-row align-items-start gap-4">

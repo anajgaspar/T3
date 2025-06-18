@@ -1,7 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-export default function ListagemPets ({ nome, raca, genero }) {
+interface ListagemProps {
+    nome: string,
+    raca: string,
+    genero: string
+}
+
+export default function ListagemPets ({ nome, raca, genero }: ListagemProps) {
     return (
         <li className="list-group-item d-flex justify-content-between align-items-center gap-4 flex-wrap">
             <div className="d-flex flex-column">

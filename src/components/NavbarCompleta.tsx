@@ -1,7 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-export default function NavbarCompleta ({ rota }) {
+interface NavbarProps {
+    rota: string
+}
+
+export default function NavbarCompleta ({ rota }: NavbarProps) {
     return (
         <nav className="navbar sticky-top">
             <div className="container-fluid justify-content-between">
