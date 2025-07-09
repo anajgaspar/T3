@@ -29,7 +29,7 @@ Aplicação web desenvolvida como parte da disciplina **Técnicas de Programaç�
 ### 2. Instale as dependências:
 
 ```bash
- npm install
+ npm install --force
 ```
 
 ### 3. Em seguida, rode o comando para iniciar a aplicação:
